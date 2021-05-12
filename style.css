@@ -1,0 +1,72 @@
+:root {
+  --gray: #9a9a9a;
+  --white: #f3f0fd;
+  --dark-blue: #2c53ba;
+  --black: #111216;
+  --gray-font: #4b534a;
+  --gray-blue: #9fadd5;
+  --gray-blue-second: #768cb1;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(9, 1fr) / repeat(8, 1fr);
+  height: 100vh;
+}
+.title{
+    font-size: 9vw;
+    grid-column: 1 / 10;
+    grid-row: 1 / 5;
+}
+.title h2{
+    font-weight: 200;
+    text-align: center;
+}
+.sentence{
+    font-size: 1rem;
+    padding: 20px;
+    grid-column: 4 / 6;
+    grid-row: 6 / 7;
+}
+.img-one {
+  background-image: url("https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?cs=srgb&dl=pexels-expect-best-323780.jpg&fm=jpg"); 
+  background-size: cover;
+  grid-column: 3 / 7;
+  grid-row: 2 / 6;
+}
+.img-two {
+    background-image: url("https://cdn.pixabay.com/photo/2017/04/10/22/28/residence-2219972_960_720.jpg"); 
+    background-size: cover;
+    grid-column: 2 / 4;
+    grid-row: 4 / 7;
+}
+.img-three {
+    background-image: url("https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?cs=srgb&dl=pexels-pixasquare-1115804.jpg&fm=jpg"); 
+    background-size: cover;
+    grid-column: 7 / 8;
+    grid-row: 6 / 8;
+}
+.img-four{
+    background-image: url("https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?cs=srgb&dl=pexels-jimmy-teoh-1010657.jpg&fm=jpg"); 
+    background-size: cover;
+    grid-column: 4 / 6;
+    grid-row: 7 / 9;
+}
+.name{
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+    font-size: 1.5rem;
+    font-weight: 200;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+}
